@@ -47,14 +47,14 @@
             <h1><a href="index.html">COVID-19 en Alemania</a></h1>
         </header>
         <section>
-            <h2>La situación en otro países</h2>
-            <p>Cras vitae justo commodo, consequat risus eget, egestas lorem. Quisque consequat sagittis odio eget gravida. Integer dignissim diam sit amet finibus ullamcorper. Nulla semper consequat eros vel accumsan.</p>
-            <p><a href="page-1.html">Vínculo a page-1.html</a>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum malesuada velit pharetra porttitor. Nulla accumsan turpis mollis urna posuere, nec varius justo rhoncus. Vestibulum condimentum sollicitudin tempor. Ut sapien lacus, euismod ut condimentum eget, hendrerit non ligula. Cras vitae justo commodo, consequat risus eget, egestas lorem. Quisque consequat sagittis odio eget gravida. Integer dignissim diam sit amet finibus ullamcorper. Nulla semper consequat eros vel accumsan.</p>
+            <h2>La situación en otros países</h2>
+            <p>Se dice que Italia y España tienen lo peor detrás de ellos</p>
+            <p><a href="page-1.html">Estado actual de la investigación</a>. Al menos hay "buenas" noticias para algunos países. Se dice que Italia y España ya han superado los terribles picos de la pandemia de coronavirus, y para principios de agosto se espera que ambos países registren alrededor de 20.000 muertes cada uno. También nuestro vecino Francia tiene probablemente lo peor detrás (actualmente: más de 19.300 muertos).</p>
             <figure>
                 <canvas id="uci"></canvas>
-                <figcaption>Indica fuente(s) de los datos</figcaption>
+                <figcaption>https://pomber.github.io/covid19/timeseries.json</figcaption>
             </figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum malesuada velit pharetra porttitor. Nulla accumsan turpis mollis urna posuere, nec varius justo rhoncus. Vestibulum condimentum sollicitudin tempor. Ut sapien lacus, euismod ut condimentum eget, hendrerit non ligula. Cras vitae justo commodo, consequat risus eget, egestas lorem. Quisque consequat sagittis odio eget gravida. Integer dignissim diam sit amet finibus ullamcorper. Nulla semper consequat eros vel accumsan.</p>
+            <p>Sin embargo, hay que decir claramente que esta previsión no es nada definitivo, porque: Todavía no está claro cómo la población respectiva seguirá participando en el distanciamiento social, cómo continuarán los políticos y cómo reaccionará la gente. Recientemente, también ha habido un aumento de los brotes de coronavirus en las residencias de ancianos y asilos en Alemania. Si los grupos de alto riesgo se infectaran, esto tendría un impacto considerable en las previsiones de las tasas de mortalidad.</p>
         </section>
         <footer>
             <hr>
@@ -71,29 +71,21 @@
             data: {
                 labels: ["01/04", "02/04", "03/04", "04/04", "05/04", "06/04", "07/04", "08/04", "09/04", "10/04", "11/04", "12/04", "13/04", "14/04", "15/04", "16/04", "17/04", "18/04", "19/04", "20/04", "21/04", "22/04", "23/04", "24/04", "25/04", "26/04", "27/04", "28/04", "29/04", "30/04"],
                 datasets: [{
-                    label: 'CHILE',
+                    label: 'ESPANIA',
                     borderColor: '#cc2f59',
                     backgroundColor: '#cc2f59',
                     borderWidth: 1,
                     pointRadius: 2,
                     lineTension: 0,
-                    data: [16, 18, 22, 27, 34, 37, 43, 48, 57, 65, 73, 80, 82, 92, 94, 105, 116, 126, 133, 139, 147, 160, 168, 174, 181, 189, 198, 207]
+                    data: [9387, 10348, 11198, 11947, 12641, 13341, 14045, 14792, 15447, 16081, 16606, 17209, 17756, 18056, 18708, 19315, 20002, 20043, 20453, 20852, 21282, 21717, 22157, 22524, 22902, 23190, 23521, 23822, 24275, 24543]
                 }, {
-                    label: 'ARGENTINA',
+                    label: 'ITALIA',
                     borderColor: '#2b89f5',
                     backgroundColor: '#2b89f5',
                     borderWidth: 1,
                     pointRadius: 2,
                     lineTension: 0,
-                    data: [28, 36, 39, 43, 44, 48, 56, 63, 72, 82, 83, 90, 97, 102, 111, 115, 123, 129, 132, 136, 147, 152, 165, 176, 185, 192, 197, 207]
-                }, {
-                    label: 'ECUADOR',
-                    borderColor: '#6d2b65', // noten que este color coincide con el de h1{…} en el CSS
-                    backgroundColor: '#6d2b65', // esto para darle consistencia a los colores en uso
-                    borderWidth: 1,
-                    pointRadius: 2,
-                    lineTension: 0,
-                    data: [93, 120, 145, 172, 180, 191, 191, 242, 272, 297, 315, 333, 355, 369, 388, 403, 421, 456, 474, 507, 520, 537, 560, 576, 576, 576, 663, 871]
+                    data: [13155, 13915, 14681, 15362, 15887, 16523, 17127, 17669, 18279, 18849, 19468, 19899, 	20465, 21067, 21645, 22170, 22745, 	23227, 23660, 24114, 24648, 25085, 25549, 25969, 26384, 26644, 	26977, 27359, 27682, 27967]
                 }]
             },
             options: {
